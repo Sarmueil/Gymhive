@@ -527,7 +527,7 @@ export const womenProducts = [
     {
       _id: '1',
       name: 'Menns',
-      image: '/images/n1.svg',
+      image: 'public/images/n1.svg',
       description:
         'High top fashion shoes',
       brand: 'nike',
