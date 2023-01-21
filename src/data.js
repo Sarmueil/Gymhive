@@ -265,7 +265,7 @@ export const womenProducts = [
     {
         _id: '1',
         name: 'Menns',
-        image: '/images/wx1.svg',
+        image: '/Images/wx1.svg',
         description:
           'High top fashion shoes',
         brand: 'nike',
@@ -278,7 +278,7 @@ export const womenProducts = [
       {
         _id: '2',
         name: 'Sportees',
-        image: '/images/wx2.svg',
+        image: '/Images/wx2.svg',
         description:
           'Exotic joggers- yellow',
         brand: 'nike',
@@ -291,7 +291,7 @@ export const womenProducts = [
       {
         _id: '3',
         name: 'Sketchers',
-        image: '/images/wx3.svg',
+        image: '/Images/wx3.svg',
         description:
           'Exotic sport shoes',
         brand: 'nike',
@@ -317,7 +317,7 @@ export const womenProducts = [
       {
         _id: '5',
         name: 'Papsae',
-        image: '/images/wx5.svg',
+        image: '/Images/wx5.svg',
         description:
           'Mens fashion shoes',
         brand: 'nike',
@@ -330,7 +330,7 @@ export const womenProducts = [
       {
         _id: '6',
         name: 'Fashion Sneakers',
-        image: '/images/wx6.svg',
+        image: '/Images/wx6.svg',
         description:
           'lightweight sneakers',
         brand: 'puma',
@@ -343,7 +343,7 @@ export const womenProducts = [
       {
         _id: '7',
         name: 'Canvas sneakers',
-        image: '/images/wx7.svg',
+        image: '/Images/wx7.svg',
         description:
           'Sneaker sport shoes',
         brand: 'vans',
@@ -356,7 +356,7 @@ export const womenProducts = [
       {
         _id: '8',
         name: 'Leather Boots',
-        image: '/images/wx8.svg',
+        image: '/Images/wx8.svg',
         description:'Exotic jungle boots',
         brand: 'Addidas',
         category: 'New',
@@ -367,7 +367,7 @@ export const womenProducts = [
       },
       {
         _id: '9', 
-        image: '/images/wx9.svg',
+        image: '/Images/wx9.svg',
         name: 'Merrell',
         description:'Outdoor, fashion shoes',
         brand: 'Nike',
@@ -379,7 +379,7 @@ export const womenProducts = [
       },
       {
         _id: '10',
-        image: '/images/wx10.svg',
+        image: '/Images/wx10.svg',
         name: 'Men Sneakers',
         description:
         'High top sneakers',
@@ -392,7 +392,7 @@ export const womenProducts = [
       },
       {
         _id: '11',
-        image: '/images/wx11.svg',
+        image: '/Images/wx11.svg',
         name: 'Men Sneakers',
         description:
         'High top sneakers',
@@ -405,7 +405,7 @@ export const womenProducts = [
       },
       {
         _id: '12',
-        image: '/images/wx12.svg',
+        image: '/Images/wx12.svg',
         name: 'Men Sneakers',
         description:
         'High top sneakers',
@@ -418,7 +418,7 @@ export const womenProducts = [
       },
       {
         _id: '13',
-        image: '/images/wx13.svg',
+        image: '/Images/wx13.svg',
         name: 'Men Sneakers',
         description:
         'High top sneakers',
@@ -431,7 +431,7 @@ export const womenProducts = [
       },
       {
         _id: '14',
-        image: '/images/wx14.svg',
+        image: '/Images/wx14.svg',
         name: 'Men Sneakers',
         description:
         'High top sneakers',
@@ -444,7 +444,7 @@ export const womenProducts = [
       },
       {
         _id: '15',
-        image: '/images/wx15.svg',
+        image: '/Images/wx15.svg',
         name: 'Men Sneakers',
         description:
         'High top sneakers',
@@ -457,7 +457,7 @@ export const womenProducts = [
       },
       {
         _id: '16',
-        image: '/images/wx16.svg',
+        image: '/Images/wx16.svg',
         name: 'Men Sneakers',
         description:
         'High top sneakers',
@@ -470,7 +470,7 @@ export const womenProducts = [
       },
       {
         _id: '17',
-        image: '/images/wx17.svg',
+        image: '/Images/wx17.svg',
         name: 'Men Sneakers',
         description:
         'High top sneakers',
@@ -483,7 +483,7 @@ export const womenProducts = [
       },
       {
         _id: '18',
-        image: '/images/wx18.svg',
+        image: '/Images/wx18.svg',
         name: 'Men Sneakers',
         description:
         'High top sneakers',
@@ -496,7 +496,7 @@ export const womenProducts = [
       },
       {
         _id: '19',
-        image: '/images/wx19.svg',
+        image: '/Images/wx19.svg',
         name: 'Men Sneakers',
         description:
         'High top sneakers',
@@ -509,7 +509,7 @@ export const womenProducts = [
       },
       {
         _id: '20',
-        image: '/images/wx20.svg',
+        image: '/Images/wx20.svg',
         name: 'Men Sneakers',
         description:
         'High top sneakers',
@@ -2369,7 +2369,7 @@ export const MnewProducts = [
   export const featuredProducts = [
     {
       _id: '1',
-      image: '/images/featuredA.svg',
+      image: '/Images/featuredA.svg',
       name: 'Nike air jordan',
       description:
       'Nike Air Jordan 2021:Snipe In Grand Style',
@@ -2382,7 +2382,7 @@ export const MnewProducts = [
     },
     {
         _id: '2',
-        image: '/images/featuredB.svg',
+        image: '/Images/featuredB.svg',
         name: 'Nike air max',
         description:
         'Nike Air Max 2021:Show Off In Grand Style',
@@ -2395,7 +2395,7 @@ export const MnewProducts = [
       },
       {
         _id: '3', 
-        image: '/images/featuredC.svg',
+        image: '/Images/featuredC.svg',
         name: 'Sportees Heelpeak AE0-2: 2021',
         description:
         'Snipe in comfort: Get yours Now',
@@ -2408,7 +2408,7 @@ export const MnewProducts = [
       },
       {
         _id: '4', 
-        image: '/images/featuredD.svg',
+        image: '/Images/featuredD.svg',
         name: 'Sportees GoRun B5-2: 2021',
         description:
         'Snipe in comfort: Get yours Now',
@@ -2421,7 +2421,7 @@ export const MnewProducts = [
       },
       {
         _id: '5', 
-        image: '/images/featuredE.svg',
+        image: '/Images/featuredE.svg',
         name: 'Sportees SnipeFeet G6-A: 2021',
         description:
         'Snipe in comfort: Get yours Now',
@@ -2434,7 +2434,7 @@ export const MnewProducts = [
       },
       {
         _id: '6', 
-        image: '/images/brandBG.svg',
+        image: '/Images/brandBG.svg',
         name: 'Lebron N-Walk Collection: 2021', 
         description:
         'Snipe in comfort: Get yours Now',
@@ -2447,7 +2447,7 @@ export const MnewProducts = [
       },
       {
         _id: '7', 
-        image: '/images/featuredG.svg',
+        image: '/Images/featuredG.svg',
         name: 'Lebron N-Walk HL-43: 2021',
         description:
         'Snipe in comfort: Get yours Now',
@@ -2460,7 +2460,7 @@ export const MnewProducts = [
       },
       {
         _id: '8', 
-        image: '/images/featuredH.svg',
+        image: '/Images/featuredH.svg',
         name: 'Lebron N-Walk HL-43: 2021',
         description:
         'Snipe in comfort: Get yours Now',
@@ -2473,7 +2473,7 @@ export const MnewProducts = [
       },
       {
         _id: '9', 
-        image: '/images/featuredI.svg',
+        image: '/Images/featuredI.svg',
         name: 'Lebron N-Walk HL-43: 2021',
         description:
         'Snipe in comfort: Get yours Now',
@@ -2486,7 +2486,7 @@ export const MnewProducts = [
       },
       {
         _id: '10', 
-        image: '/images/featuredJ.svg',
+        image: '/Images/featuredJ.svg',
         name: 'Nike Air Max 2021',
         description:
         'Snipe in comfort: Get yours Now',
@@ -2499,7 +2499,7 @@ export const MnewProducts = [
       },
       {
         _id: '11', 
-        image: '/images/featuredK.svg',
+        image: '/Images/featuredK.svg',
         name: 'Nike Air Max 2021',
         description:
         'Snipe in comfort: Get yours Now',
@@ -2512,7 +2512,7 @@ export const MnewProducts = [
       },
       {
         _id: '12', 
-        image: '/images/featuredL.svg',
+        image: '/Images/featuredL.svg',
         name: 'Nike Air Max 2021',
         description:
         'Snipe in comfort: Get yours Now',
@@ -2525,7 +2525,7 @@ export const MnewProducts = [
       },
       {
         _id: '13', 
-        image: '/images/featuredM.svg',
+        image: '/Images/featuredM.svg',
         name: 'New Balance-Fresh Foam Roav',
         description:
         'Snipe in comfort: Get yours Now',
@@ -2539,8 +2539,8 @@ export const MnewProducts = [
   ]
 
   export const productPageImages = [
-    "/images/productE1.webp",
-    "/images/productE2.webp",
-    "/images/productE3.webp",
-    "/images/productE4.webp"
+    "/Images/productE1.webp",
+    "/Images/productE2.webp",
+    "/Images/productE3.webp",
+    "/Images/productE4.webp"
   ]
