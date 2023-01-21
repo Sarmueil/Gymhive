@@ -1,5 +1,5 @@
 import React from 'react';
-import { newproducts, WomenXclusive } from '../data';
+import { products } from '../data';
 import Header from '../components/Header';
 import HeadlineContainer from '../components/HeadlineContainer';
 import Hero from '../components/Hero';
@@ -12,19 +12,21 @@ import SectionContainer from '../components/SectionContainer';
 import Footer from '../components/Footer';
 
 
-
 const Homepage = () => {
+    const trendingProducts = products?.filter((item)=> item?.isNewProduct === true)
+    const realedProducts = products?.filter((item)=> item?.isRelatedProduct === true)
+
     return (
         <div className='w-full relative'>
             <Header />
             <Hero />
             <HeadlineContainer text='Trending now' btnText='New' />
-            <SliderContainer data={newproducts} />
+            <SliderContainer data={trendingProducts} />
             <ParrallaxScroll />
             <HeadlineContainer text='Snipe More' btnText='Explore' />
             <HomeCategories />
             <HeadlineContainer text='Hard Drive' btnText='Explore' /> 
-            <SliderContainer data={WomenXclusive} />
+            <SliderContainer data={realedProducts} />
             <Headline text='Featured' />
             <FeaturedProductsContainer />
             <SectionContainer />

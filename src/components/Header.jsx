@@ -7,14 +7,16 @@ import LanguageIcon from '@mui/icons-material/Language';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import MenuIcon from '@mui/icons-material/Menu';
 import './homeLayout.css'
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Header = () => {
-    return (
+    const Navigate = useNavigate();
+    return ( 
         <div className='w-full sticky'>
             <div className='bg-[#E5E5E5] hidden md:flex justify-between items-center py-[4px] px-[30px]'>
-                <img src={LogoA} alt="logo" className='object-contain h-[30px] w-[40px] cursor-pointer' />
+                <img src={LogoA} alt="logo" className='object-contain h-[30px] w-[40px] cursor-pointer' onClick={()=> Navigate(`/`)}/>
                 <div className='flex items-center'>
                     {['Explore', 'Sign up', 'Log in'].map((menu, index) => (
                         <div className='mr-[13px] p-[5px] cursor-pointer text-[16px] font-[Josefin Sans]' key={index}>{menu}</div>
@@ -23,7 +25,7 @@ const Header = () => {
             </div>
             <div className='hidden md:flex justify-between items-center py-[2px] px-[30px] sticky top-0 bg-white z-[100] cursor-pointer'>
                 <div className='flex justify-between items-center'>
-                    <img src={LogoB} alt="logo" className='object-contain h-[60px] w-[85px] mr-[5rem]' />
+                    <img src={LogoB} alt="logo" className='object-contain h-[60px] w-[85px] mr-[5rem]' onClick={()=> Navigate(`/`)}/>
                     {['New', 'Men', 'Women', 'kids'].map((menu, index) => (
                         <div className='text-black mr-[17px] p-[5px] cursor-pointer text-[17px] rounded-md font-[Josefin Sans] hover:bg-black hover:text-white hover:transition-all' key={index}>{menu}</div>
                     ))}
