@@ -27,7 +27,7 @@ const Header = () => {
                 <div className='flex justify-between items-center'>
                     <img src={LogoB} alt="logo" className='object-contain h-[60px] w-[85px] mr-[5rem]' onClick={()=> Navigate(`/`)}/>
                     {['New', 'Men', 'Women', 'kids'].map((menu, index) => (
-                        <div className='text-black mr-[17px] p-[5px] cursor-pointer text-[17px] rounded-md font-[Josefin Sans] hover:bg-black hover:text-white hover:transition-all' key={index}>{menu}</div>
+                        <div className='text-black mr-[17px] p-[5px] cursor-pointer text-[17px] rounded-md font-[Josefin Sans] hover:bg-black hover:text-white hover:transition-all' key={index} onClick={()=> Navigate(`/${menu.toLowerCase()}`)}>{menu}</div>
                     ))}
                 </div>
                 <div className='flex items-center'>
@@ -53,7 +53,7 @@ const Header = () => {
             {/* mobile sidebar */}
 
             <div className='navText__container'>
-                <h3>Snipe our latest brands of footwears <a href='/'>Click here</a></h3>
+                <h3>Snipe our latest brands of footwears <a href='/new'>Click here</a></h3>
             </div>
         </div>
     )

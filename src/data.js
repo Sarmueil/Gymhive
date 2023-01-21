@@ -33,7 +33,7 @@ export const products = [
       "/Images/productE8.webp"
     ],
     product_category:'men',
-    isNewProduct:false,
+    isNewProduct:true,
     isRelatedProduct:true,
     price:'105',
     countInStock:2,
@@ -151,7 +151,7 @@ export const products = [
       "/Images/productE28.webp"
     ],
     product_category:'men',
-    isNewProduct:false,
+    isNewProduct:true,
     isRelatedProduct:true,
     price:'105',
     countInStock:1,
@@ -197,7 +197,7 @@ export const products = [
       "/Images/productE36.webp"
     ],
     product_category:'men',
-    isNewProduct:false,
+    isNewProduct:true,
     isRelatedProduct:false,
     price:'100',
     countInStock:1,
@@ -244,7 +244,7 @@ export const products = [
       "/Images/productE44.webp"
     ],
     product_category:'men',
-    isNewProduct:false,
+    isNewProduct:true,
     isRelatedProduct:false,
     price:'150',
     countInStock:1,
@@ -291,7 +291,7 @@ export const products = [
       "/Images/productE52.webp"
     ],
     product_category:'men',
-    isNewProduct:false,
+    isNewProduct:true,
     isRelatedProduct:true,
     price:'115',
     countInStock:1,
@@ -385,7 +385,7 @@ export const products = [
       "/Images/productE68.webp"
     ],
     product_category:'men',
-    isNewProduct:false,
+    isNewProduct:true,
     isRelatedProduct:false,
     price:'117.97',
     countInStock:1,
@@ -436,7 +436,7 @@ export const products = [
       "/Images/productE76.jpeg"
     ],
     product_category:'men',
-    isNewProduct:false,
+    isNewProduct:true,
     isRelatedProduct:true,
     price:'160',
     countInStock:1,

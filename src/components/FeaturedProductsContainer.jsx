@@ -1,9 +1,7 @@
 import React from 'react'
-import { featuredProducts } from '../data';
 
 
-const FeaturedProductsContainer = () => {
-    const data = featuredProducts[0];
+const FeaturedProductsContainer = ({data}) => {
 
     return (
         <div className='mt-[10px] p-0 bg-transparent max-w-[90%] mx-auto my-3'>
