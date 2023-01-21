@@ -527,7 +527,7 @@ export const womenProducts = [
     {
       _id: '1',
       name: 'Menns',
-      image: 'public/images/n1.svg',
+      image: '/images/n1.svg',
       description:
         'High top fashion shoes',
       brand: 'nike',
@@ -2106,7 +2106,7 @@ export const MnewProducts = [
   export const newproducts = [
     {
       _id: '1',
-      image: '/images/productsA.svg',
+      image: '/Images/productsA.svg',
       name: 'Men Sneakers',
       description:
       'High top sneakers',
@@ -2119,7 +2119,7 @@ export const MnewProducts = [
     },
     {
       _id: '2', 
-      image: '/images/productsB.svg',
+      image: '/Images/productsB.svg',
       name: 'Merrell',
       description:
       'Outdoor, fashion shoes',
@@ -2133,7 +2133,7 @@ export const MnewProducts = [
     {
       _id: '3',
       name: 'Leather Boots',
-      image: '/images/productsC.svg',
+      image: '/Images/productsC.svg',
       description:
         'Exotic jungle boots',
       brand: 'Addidas',
@@ -2146,7 +2146,7 @@ export const MnewProducts = [
     {
       _id: '4',
       name: 'Menns',
-      image: '/images/productsT.svg',
+      image: '/Images/productsT.svg',
       description:
         'High top fashion shoes',
       brand: 'nike',
@@ -2159,7 +2159,7 @@ export const MnewProducts = [
     {
       _id: '5',
       name: 'Fashion Sneakers',
-      image: '/images/productsE.svg',
+      image: '/Images/productsE.svg',
       description:
         'lightweight sneakers',
       brand: 'puma',
@@ -2172,7 +2172,7 @@ export const MnewProducts = [
     {
       _id: '6',
       name: 'Papsae',
-      image: '/images/productsF.svg',
+      image: '/Images/productsF.svg',
       description:
         'Mens fashion shoes',
       brand: 'nike',
@@ -2185,7 +2185,7 @@ export const MnewProducts = [
     {
       _id: '7',
       name: 'Sportees',
-      image: '/images/productsG.svg',
+      image: '/Images/productsG.svg',
       description:
         'Exotic joggers',
       brand: 'nike',
@@ -2198,7 +2198,7 @@ export const MnewProducts = [
     {
       _id: '8',
       name: 'Sketchers',
-      image: '/images/productsH.svg',
+      image: '/Images/productsH.svg',
       description:
         'Exotic sport shoes',
       brand: 'nike',
@@ -2211,7 +2211,7 @@ export const MnewProducts = [
     {
       _id: '9',
       name: 'Sportees',
-      image: '/images/productsI.svg',
+      image: '/Images/productsI.svg',
       description:
         'Exotic joggers- yellow',
       brand: 'nike',
@@ -2224,7 +2224,7 @@ export const MnewProducts = [
     {
       _id: '10',
       name: 'Menns',
-      image: '/images/productsJ.svg',
+      image: '/Images/productsJ.svg',
       description:
         'High top fashion shoes',
       brand: 'nike',
@@ -2237,7 +2237,7 @@ export const MnewProducts = [
     {
       _id: '11',
       name: 'Sportees',
-      image: '/images/productsK.svg',
+      image: '/Images/productsK.svg',
       description:
         'Exotic joggers- yellow',
       brand: 'nike',
@@ -2250,7 +2250,7 @@ export const MnewProducts = [
     {
       _id: '12',
       name: 'Menns',
-      image: '/images/productsL.svg',
+      image: '/Images/productsL.svg',
       description:
         'High top fashion shoes',
       brand: 'nike',
@@ -2263,7 +2263,7 @@ export const MnewProducts = [
     {
       _id: '13',
       name: 'Menns',
-      image: '/images/productsM.svg',
+      image: '/Images/productsM.svg',
       description:
         'High top fashion shoes',
       brand: 'nike',
@@ -2276,7 +2276,7 @@ export const MnewProducts = [
     {
       _id: '14',
       name: 'Menns',
-      image: '/images/productsN.svg',
+      image: '/Images/productsN.svg',
       description:
         'High top fashion shoes',
       brand: 'nike',
@@ -2289,7 +2289,7 @@ export const MnewProducts = [
     {
       _id: '15',
       name: 'Menns',
-      image: '/images/productsO.svg',
+      image: '/Images/productsO.svg',
       description:
         'High top fashion shoes',
       brand: 'nike',
@@ -2302,7 +2302,7 @@ export const MnewProducts = [
     {
       _id: '16',
       name: 'Menns',
-      image: '/images/productsP.svg',
+      image: '/Images/productsP.svg',
       description:
         'High top fashion shoes',
       brand: 'nike',
@@ -2315,7 +2315,7 @@ export const MnewProducts = [
     {
       _id: '17',
       name: 'Menns',
-      image: '/images/productsQ.svg',
+      image: '/Images/productsQ.svg',
       description:
         'High top fashion shoes',
       brand: 'nike',
@@ -2328,7 +2328,7 @@ export const MnewProducts = [
     {
       _id: '18',
       name: 'Menns',
-      image: '/images/productsR.svg',
+      image: '/Images/productsR.svg',
       description:
         'High top fashion shoes',
       brand: 'nike',
@@ -2341,7 +2341,7 @@ export const MnewProducts = [
     {
       _id: '19',
       name: 'Menns',
-      image: '/images/productsS.svg',
+      image: '/Images/productsS.svg',
       description:
         'High top fashion shoes',
       brand: 'nike',
