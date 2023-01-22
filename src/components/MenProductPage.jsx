@@ -22,7 +22,7 @@ const MenProductPage = () => {
             <ProductsContainer products={newProducts.slice(9)} />
             <HeroContainer img={menHero} title='High Top Lebron 2021' text='SNIPE MADE FOR MEN' desc='Exclusively for men. Walk your way to the horizons with lebron high top sneakers' />
             <Headline text='Featured' />
-            <HeroContainer img={branded?.image} title='High Top Lebron 2021' text={branded?.name} desc={branded?.description} />
+            <HeroContainer img={branded?.image} title='High Top Lebron 2023' text={branded?.name} desc={branded?.description} />
             <HeadlineContainer text='Hard Drive' btnText='Explore' />
             <SliderContainer data={relatedProducts} />
             <SectionContainer />
