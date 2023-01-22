@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import './App.css';
 import {
   BrowserRouter,
@@ -11,6 +12,11 @@ import MenCategory from './pages/MenCategory';
 import MenProducts from './pages/MenProducts';
 
 function App() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -22,7 +28,7 @@ function App() {
           <Route path="men/products" element={<MenProducts />} />
         </Routes>
       </div>
-    </BrowserRouter> 
+    </BrowserRouter>
   );
 }
 

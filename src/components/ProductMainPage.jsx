@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom';
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import { products } from '../data';
@@ -15,10 +15,6 @@ const ProductMainPage = () => {
     console.log(singleProduct, 'singleProductsingleProduct')
 
     const realedProducts = products?.filter((item) => item?.isRelatedProduct === true && item?._id !== id) 
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [id]);
 
     return (
         <>
