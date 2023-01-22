@@ -51,8 +51,9 @@
     .navText__container h3 {
         font-size: 10px;
     }
+
     .navText__container h3 {
-      font-size: 12px;
+        font-size: 12px;
     }
 }
 
@@ -178,6 +179,70 @@
 
 @media only screen and (max-width: 450px) {
     .brand_bg {
+        display: none;
+    }
+}
+
+/* herocomponent */
+
+@keyframes textSlide {
+    0% {
+        color: black;
+        margin-bottom: -10px;
+    }
+
+    30% {
+        color: #FCA311;
+        letter-spacing: 15px;
+        margin-bottom: -10px;
+    }
+
+    100% {
+        letter-spacing: 8px;
+        margin-bottom: -10px;
+    }
+}
+
+@keyframes textSlideMob {
+    0% {
+        color: black;
+    }
+
+    30% {
+        color: #14213D;
+        /* margin-bottom: -10px; */
+    }
+
+    100% {
+        color: #FCA311;
+        /* margin-bottom: -10px; */
+    }
+}
+
+.text_header {
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 45px;
+    text-transform: uppercase;
+    animation: textSlide 7s infinite;
+}
+.text_header_mobile {
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 28px;
+    text-transform: uppercase;
+    animation: textSlideMob 7s infinite;
+}
+
+@media only screen and (max-width: 450px) {
+    .text_header {
+        display: none;
+    }
+}
+@media only screen and (min-width: 450px) {
+    .text_header_mobile {
         display: none;
     }
 }

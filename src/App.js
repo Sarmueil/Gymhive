@@ -7,6 +7,8 @@ import {
 import Homepage from './pages/Homepage';
 import Product from './pages/Product';
 import NewProduct from './pages/NewProduct';
+import MenCategory from './pages/MenCategory';
+import MenProducts from './pages/MenProducts';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/" exact element={<Homepage />} />
           <Route path="product/:id" element={<Product />} />
           <Route path="new" element={<NewProduct />} />
+          <Route path="men" element={<MenCategory />} />
+          <Route path="men/products" element={<MenProducts />} />
         </Routes>
       </div>
     </BrowserRouter> 

@@ -3016,6 +3016,31 @@ export const featuredProducts = [
     rating: 4.5,
     numReviews: 12,
   },
+  {
+    _id: '13',
+    image: '/Images/menD.svg',
+    name: 'New Balance-Fresh Foam Roav',
+    description:
+      'Sport sneakers for men',
+    brand: 'Sportess',
+    category: 'New',
+    price: 400.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 12,
+  },
+  {
+    _id: '13',
+    image: '/Images/menE.svg',
+    name: 'New Balance-Fresh Foam Roav',
+    description:'GO RUN GO EASY',
+    brand: 'Sportess',
+    category: 'New',
+    price: 400.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 12,
+  }
 ]
 
 export const productPageImages = [
