@@ -43,7 +43,7 @@ const Header = () => {
 
             {/* mobile sidebar */}
             <div className='md:hidden flex justify-between items-center py-2 px-4'>
-                <img src={LogoA} alt="logo" className='object-contain h-[30px] w-[40px] cursor-pointer' />
+                <img src={LogoA} alt="logo" className='object-contain h-[30px] w-[40px] cursor-pointer' onClick={()=> Navigate(`/`)}/>
                 <div className='flex justify-center items-center'>
                     <NotificationsNoneIcon className='w-[25px] h-[25px] cursor-pointer' />
                     <ShoppingCartIcon className='w-[25px] h-[25px] cursor-pointer ml-2' />

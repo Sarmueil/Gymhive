@@ -1,20 +1,22 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
+import { AiFillStar, AiOutlineStar, AiFillMinusCircle, AiFillPlusCircle } from 'react-icons/ai';
 import { products } from '../data';
-// AiOutlineMinus, AiOutlinePlus,
 import HeadlineContainer from './HeadlineContainer';
 import SliderContainer from './SliderContainer';
 import Footer from './Footer';
+import { useStoreContext } from '../contexts/StoreContext';
 
 
 const ProductMainPage = () => {
+
+    const { quantity, increaseQuantity, decreaseQuantity, onAddProduct } = useStoreContext()
 
     const { id } = useParams()
     const singleProduct = products?.find((item) => item?._id === id)
     console.log(singleProduct, 'singleProductsingleProduct')
 
-    const realedProducts = products?.filter((item) => item?.isRelatedProduct === true && item?._id !== id) 
+    const realedProducts = products?.filter((item) => item?.isRelatedProduct === true && item?._id !== id)
 
     return (
         <>
@@ -85,8 +87,16 @@ const ProductMainPage = () => {
                             </ul>
                         ))}
                     </div>
+                    <div className='mt-8 flex items-center'>
+                        <h2 className='text-[20px]'>Quantity</h2>
+                        <div className='flex items-center ml-3 justify-between'>
+                            <AiFillMinusCircle className='text-black text-[30px] cursor-pointer ml-1' onClick={() => decreaseQuantity()} />
+                            <h1 className='text-[30px] ml-1'>{quantity}</h1>
+                            <AiFillPlusCircle className='text-black text-[30px] cursor-pointer' onClick={() => increaseQuantity()} />
+                        </div>
+                    </div>
                     <div className='mt-8'>
-                        <div className='w-[100%] md:w-[80%] mx-auto py-3 md:py-4 rounded-full cursor-pointer text-[14px] md:text-[16px] bg-black text-white text-center'>Add to cart</div>
+                        <div className='w-[100%] md:w-[80%] mx-auto py-3 md:py-4 rounded-full cursor-pointer text-[14px] md:text-[16px] bg-black text-white text-center' onClick={()=> onAddProduct(singleProduct, quantity)}>Add to cart</div>
                         <div className='w-[100%] md:w-[80%] mx-auto py-2 md:py-4 rounded-full cursor-pointer text-[14px] md:text-[16px] bg-transparent text-black border mt-4 border-black text-center'>Wishlist</div>
                     </div>
 
