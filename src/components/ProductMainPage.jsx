@@ -14,7 +14,6 @@ const ProductMainPage = () => {
 
     const { id } = useParams()
     const singleProduct = products?.find((item) => item?._id === id)
-    console.log(singleProduct, 'singleProductsingleProduct')
 
     const realedProducts = products?.filter((item) => item?.isRelatedProduct === true && item?._id !== id)
 
@@ -100,7 +99,7 @@ const ProductMainPage = () => {
                         <div className='w-[100%] md:w-[80%] mx-auto py-2 md:py-4 rounded-full cursor-pointer text-[14px] md:text-[16px] bg-transparent text-black border mt-4 border-black text-center'>Wishlist</div>
                     </div>
 
-                    <div className='mt-4 md:mt-8 bg-[#E5E5E5] md:bg-transparent py-1 md:py-0'>
+                    <div className='mt-4 md:mt-8 bg-[#E5E5E5] md:bg-transparent py-1 md:py-0 z-0'>
                         <HeadlineContainer text='Hard Drive' btnText='Explore' />
                         <SliderContainer data={realedProducts} />
                     </div>
