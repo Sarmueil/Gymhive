@@ -15,6 +15,7 @@ import WomenProducts from './pages/WomenProducts';
 import KidsCategory from './pages/KidsCategory';
 import KidsProduct from './pages/KidsProduct';
 import { StoreContextProviderContainer } from './contexts/StoreContext';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
             <Route path="kids" element={<KidsCategory />} />
             <Route path="kids/products" element={<KidsProduct />} />
           </Routes>
+          <Toaster />
         </div>
       </BrowserRouter>
     </StoreContextProviderContainer>

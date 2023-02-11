@@ -4,7 +4,7 @@ import { useStoreContext } from '../contexts/StoreContext';
 
 
 const Cart = () => {
-    const { totalPrice, totalQuantities, cartItems, setShowCart,handleCartItemQuantity } = useStoreContext();
+    const { totalPrice, totalQuantities, cartItems, setShowCart,handleCartItemQuantity, onRemoveProduct } = useStoreContext();
     console.log(totalQuantities, 'ttttt')
     console.log(cartItems, 'ooooo')
 
@@ -41,7 +41,7 @@ const Cart = () => {
                                         <h1 className='text-[25px] ml-1'>{item?.quantity}</h1>
                                         <AiFillPlusCircle className='text-black text-[25px] cursor-pointer' onClick={()=> handleCartItemQuantity(item?._id, 'inc')}/>
                                     </div>
-                                    <button className='outline-none border-none px-2 py-1 text-[10px] md:text-[16px] text-white bg-red-500 ml-7 md:ml-32'>Remove</button>
+                                    <button className='outline-none border-none px-2 py-1 text-[10px] md:text-[16px] text-white bg-red-500 ml-7 md:ml-32' onClick={()=> onRemoveProduct(item)}>Remove</button>
                                 </div>
                             </div>
                         </div>

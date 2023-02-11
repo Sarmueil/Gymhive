@@ -1,5 +1,5 @@
 import React, { useState, createContext, useContext } from "react";
-// import { toast } from 'react-hot-toast';
+import { toast } from 'react-hot-toast';
 
 const initialState = {
     showCart: false,
@@ -53,11 +53,11 @@ export const StoreContextProviderContainer = ({ children }) => {
             product.quantity = quantity
             setCartItems([...cartItems, { ...product }])
         }
-        //   toast.success(`${product?.product_name} added to cart`)
+          toast.success(`${product?.product_name} added to cart`)
     }
 
 
-    let seenProducts;
+    let seenProducts; 
     let index;
 
     const handleCartItemQuantity = (id, val) => {
@@ -65,7 +65,7 @@ export const StoreContextProviderContainer = ({ children }) => {
         index = cartItems.findIndex((item) => item?._id === id)
         const newCartItems = cartItems.filter((item) => item._id !== id)
 
-        if (val === 'inc') {
+        if (val === 'inc') { 
             setCartItems([...newCartItems, { ...seenProducts, quantity: seenProducts.quantity + 1 } ]);
             setTotalPrice((prev) => prev + Number(seenProducts?.price))
             setTotalQuantities((prev) => prev + 1)
@@ -76,6 +76,14 @@ export const StoreContextProviderContainer = ({ children }) => {
                 setTotalQuantities((prev) => prev - 1)
             }
         }
+    }
+
+    const onRemoveProduct = (product) => {
+        seenProducts = cartItems.find((item) => item?._id === product?._id)
+        const newCartItems = cartItems.filter((item) => item._id !== product?._id)
+        setTotalPrice((prev) => prev - Number(seenProducts?.price) - seenProducts?.quantity)
+        setTotalQuantities((prev) => prev - seenProducts?.quantity)
+        setCartItems(newCartItems)
     }
 
     return (
@@ -90,7 +98,8 @@ export const StoreContextProviderContainer = ({ children }) => {
                 increaseQuantity,
                 decreaseQuantity,
                 onAddProduct,
-                handleCartItemQuantity
+                handleCartItemQuantity,
+                onRemoveProduct
             }}
         >
             {children}
