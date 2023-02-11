@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import {
   BrowserRouter,
@@ -16,17 +16,14 @@ import KidsCategory from './pages/KidsCategory';
 import KidsProduct from './pages/KidsProduct';
 import { StoreContextProviderContainer } from './contexts/StoreContext';
 import { Toaster } from 'react-hot-toast';
+import { ScrollToTop } from './components/ScrollToTop';
 
 function App() {
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <StoreContextProviderContainer>
       <BrowserRouter>
         <div className="App">
+          <ScrollToTop />
           <Routes>
             <Route path="/" exact element={<Homepage />} />
             <Route path="product/:id" element={<Product />} />
