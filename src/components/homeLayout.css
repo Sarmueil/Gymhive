@@ -246,3 +246,42 @@
         display: none;
     }
 }
+
+
+/* gymhive */
+.hero_text_gymhive {
+        max-width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        border-radius: 10px;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.4);
+        color: white;
+        padding: 30px 10px;
+        text-align: center;
+        /* width: 35%;  */
+}
+
+.hero_text_gymhive h5 {
+    font-size: 100px;
+}
+.hero_text_gymhive p {
+    font-size: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 450px) {
+    .hero_text_gymhive {
+        max-width: 90%;
+    }
+    .hero_text_gymhive h5 {
+        font-size: 35px;
+    }
+    .hero_text_gymhive p {
+        font-size: 14px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
