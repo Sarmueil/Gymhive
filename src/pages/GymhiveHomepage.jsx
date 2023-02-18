@@ -49,8 +49,8 @@ const GymhiveHomepage = () => {
             </div>
 
             {/* // hero */}
-            <section className='bg-black h-[55vh] md:h-[95vh]'>
-                <div className='h-[100%] w-full relative'>
+            <section className='bg-black h-[60vh] md:h-[95vh]'>
+                <div className='overflow-hidden h-[100%] w-full relative'>
                     {heroDisplayData.map((item, index) => (
                         <div className='hero_items' key={index}>
                             <img src={item.img} className="w-full object-cover" alt='workout__images' />
