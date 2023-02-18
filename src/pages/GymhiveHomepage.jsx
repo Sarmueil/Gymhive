@@ -1,9 +1,5 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import VideoA from '../assets/gymA.mp4';
-import VideoB from '../assets/gymB.mp4';
-import VideoC from '../assets/gymC.mp4';
-import VideoD from '../assets/gymD.mp4';
 import ImgA from '../assets/Images/gymE.jpg';
 import ImgB from '../assets/Images/gymF.jpg';
 import ImgC from '../assets/Images/gymG.jpg';
@@ -15,29 +11,25 @@ const GymhiveHomepage = () => {
 
     const heroDisplayData = [
         {
-            vid: VideoA,
+            img: ImgB,
             title: 'Snipe it love more',
             text: 'Explore a curated selection of footwaer brands for your own comfort.',
-            img:ImgA
         },
         {
-            vid: VideoB,
+            img: ImgA,
             title: 'Go run go steady',
             text: 'Hit the road all day long, your move your way.',
-            img:ImgB
         },
         {
-            vid: VideoC,
+            img: ImgC,
             title: 'Form and function',
             text: 'Fit and bold and comfortable footwears,let us encourage your endeavors.',
-            img:ImgC 
         },
         {
-            vid: VideoD,
+            img: ImgD,
             title: 'Form and function',
             text: 'Fit and bold and comfortable footwears,let us encourage your endeavors.',
-            img:ImgD 
-        },
+        }
     ]
 
     const Navigate = useNavigate();
@@ -59,23 +51,9 @@ const GymhiveHomepage = () => {
             {/* // hero */}
             <section className='bg-black h-[55vh] md:h-[95vh]'>
                 <div className='h-[100%] w-full relative'>
-                    {heroDisplayData.map((item, index) => ( 
+                    {heroDisplayData.map((item, index) => (
                         <div className='hero_items' key={index}>
-                            <video autoPlay={true} loop muted className="w-full h-[100%] object-cover hidden md:block">
-                                <source src={item.vid} type="video/mp4" />
-                            </video>
-                            <div className='hero_text_gymhive'>
-                                <h5>Form and function</h5>
-                                <p>Transform Your Body with Our Ultimate Gym Workout Platform! Check out latest excericises for your daily routines</p>
-                                <button className='mt-4 border-none outline-none py-3 px-4 bg-black text-white rounded-lg text-[12px] md:text-[16px]'>
-                                    Get started
-                                </button>
-                            </div>
-                        </div>
-                    ))}
-                    {heroDisplayData.map((item, index) => ( 
-                        <div className='hero_items' key={index}>
-                            <img src={item.img} alt="images" className='w-full h-[100%] object-cover block md:hidden'/>
+                            <img src={item.img} className="w-full object-cover" alt='workout__images' />
                             <div className='hero_text_gymhive'>
                                 <h5>Form and function</h5>
                                 <p>Transform Your Body with Our Ultimate Gym Workout Platform! Check out latest excericises for your daily routines</p>
