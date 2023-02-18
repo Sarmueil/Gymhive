@@ -61,7 +61,7 @@ const GymhiveHomepage = () => {
                 <div className='h-[100%] w-full relative'>
                     {heroDisplayData.map((item, index) => ( 
                         <div className='hero_items' key={index}>
-                            <video autoPlay={true} preload="auto" loop muted className="w-full h-[100%] object-cover hidden md:block">
+                            <video autoPlay={true} loop muted className="w-full h-[100%] object-cover hidden md:block">
                                 <source src={item.vid} type="video/mp4" />
                             </video>
                             <img src={item.img} alt="images" className='w-full h-[100%] object-cover block md:hidden'/>
