@@ -64,6 +64,17 @@ const GymhiveHomepage = () => {
                             <video autoPlay={true} loop muted className="w-full h-[100%] object-cover hidden md:block">
                                 <source src={item.vid} type="video/mp4" />
                             </video>
+                            <div className='hero_text_gymhive'>
+                                <h5>Form and function</h5>
+                                <p>Transform Your Body with Our Ultimate Gym Workout Platform! Check out latest excericises for your daily routines</p>
+                                <button className='mt-4 border-none outline-none py-3 px-4 bg-black text-white rounded-lg text-[12px] md:text-[16px]'>
+                                    Get started
+                                </button>
+                            </div>
+                        </div>
+                    ))}
+                    {heroDisplayData.map((item, index) => ( 
+                        <div className='hero_items' key={index}>
                             <img src={item.img} alt="images" className='w-full h-[100%] object-cover block md:hidden'/>
                             <div className='hero_text_gymhive'>
                                 <h5>Form and function</h5>
