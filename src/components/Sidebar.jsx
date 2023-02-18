@@ -24,7 +24,7 @@ const Sidebar = ({ setShowSidebar }) => {
                         <div className='text-[20px] font-bold ml-3'>Join Gymhive.</div>
                     </div>
                     <div className='flex gap-2 mt-2 ml-4'>
-                        <button className='border-none outline-none py-2 px-4 bg-black text-white text-[12px] rounded-lg'>Join</button>
+                        <button className='border-none outline-none py-2 px-4 bg-black text-white text-[12px] rounded-lg' onClick={() => Navigate(`/gymhive`)}>Join</button>
                         <button className='border outline-none py-2 px-4 text-black bg-white text-[12px] rounded-lg'>Explore</button>
                     </div>
                 </div>
