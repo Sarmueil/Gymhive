@@ -285,3 +285,18 @@
         margin: 0 auto;
     }
 }
+
+/* paystack */
+
+.paystack-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    background-color: #14213D;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+  }

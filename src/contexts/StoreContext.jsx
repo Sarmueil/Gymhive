@@ -7,6 +7,7 @@ const initialState = {
     totalPrice: 0,
     totalQuantities: 0,
     quantity: 1,
+    showModal:false
 }
 
 const StoreContext = createContext(initialState);
@@ -21,9 +22,16 @@ export const StoreContextProviderContainer = ({ children }) => {
     const [quantity, setQuantity] = useState(initialState.quantity)
     const [totalPrice, setTotalPrice] = useState(initialState.totalPrice)
     const [cartItems, setCartItems] = useState(initialState.cartItems)
-    const [totalQuantities, setTotalQuantities] = useState(initialState.totalQuantities)
+    const [totalQuantities, setTotalQuantities] = useState(initialState.totalQuantities); 
+    const [isOpen, setIsOpen] = useState(initialState.showModal);
 
-    console.log(cartItems, 'items for enny')
+    const openModal = () => {
+        setIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsOpen(false);
+    };
 
     const increaseQuantity = () => {
         setQuantity((prev) => prev + 1)
@@ -37,8 +45,6 @@ export const StoreContextProviderContainer = ({ children }) => {
 
     const onAddProduct = (product, quantity) => {
         const checkProductInCart = cartItems.find((item) => item._id === product._id)
-        console.log(checkProductInCart, 'checkProductInCart')
-
         setTotalPrice((prev) => prev + product.price * quantity)
         setTotalQuantities((prev) => prev + quantity)
 
@@ -99,7 +105,10 @@ export const StoreContextProviderContainer = ({ children }) => {
                 decreaseQuantity,
                 onAddProduct,
                 handleCartItemQuantity,
-                onRemoveProduct
+                onRemoveProduct,
+                openModal,
+                closeModal,
+                isOpen
             }}
         >
             {children}

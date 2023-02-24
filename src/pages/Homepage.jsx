@@ -16,11 +16,12 @@ const Homepage = () => {
     const trendingProducts = products?.filter((item)=> item?.isNewProduct === true)
     const realedProducts = products?.filter((item)=> item?.isRelatedProduct === true)
     const data = featuredProducts[0];
+
     return (
         <div className='w-full relative'>
             <Header />
             <Hero />
-            <HeadlineContainer text='Trending now' btnText='New' />
+            <HeadlineContainer text='Trending now' btnText='New' />  
             <SliderContainer data={trendingProducts} />
             <ParrallaxScroll />
             <HeadlineContainer text='Snipe More' btnText='Explore' />
@@ -31,6 +32,7 @@ const Homepage = () => {
             <FeaturedProductsContainer data={data}/>
             <SectionContainer />
             <Footer />
+        
         </div>
     )
 }

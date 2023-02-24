@@ -6,11 +6,12 @@ import HeadlineContainer from './HeadlineContainer';
 import SliderContainer from './SliderContainer';
 import Footer from './Footer';
 import { useStoreContext } from '../contexts/StoreContext';
+import Modal from './Modal';
 
 
 const ProductMainPage = () => {
 
-    const { quantity, increaseQuantity, decreaseQuantity, onAddProduct } = useStoreContext()
+    const { quantity, increaseQuantity, decreaseQuantity, onAddProduct,isOpen } = useStoreContext()
 
     const { id } = useParams()
     const singleProduct = products?.find((item) => item?._id === id)
@@ -19,6 +20,7 @@ const ProductMainPage = () => {
 
     return (
         <>
+          {isOpen && <Modal />}
             <div className='max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 my-6'>
                 <div className='hidden md:grid grid-cols-2 gap-x-3 gap-y-3'>
                     {singleProduct?.product_images.map((image, index) => (

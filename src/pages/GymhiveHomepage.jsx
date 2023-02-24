@@ -49,7 +49,7 @@ const GymhiveHomepage = () => {
             </div>
 
             {/* // hero */}
-            <section className='bg-black h-[60vh] md:h-[95vh]'>
+            <section className='bg-black h-screen'>
                 <div className='overflow-hidden h-[100%] w-full relative'>
                     {heroDisplayData.map((item, index) => (
                         <div className='hero_items' key={index}>
@@ -63,10 +63,10 @@ const GymhiveHomepage = () => {
                             </div>
                         </div>
                     ))}
-                </div>
-            </section>
+                </div> 
+            </section> 
         </>
     )
-}
+} 
 
 export default GymhiveHomepage

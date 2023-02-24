@@ -4,9 +4,12 @@ import { useStoreContext } from '../contexts/StoreContext';
 
 
 const Cart = () => {
-    const { totalPrice, totalQuantities, cartItems, setShowCart,handleCartItemQuantity, onRemoveProduct } = useStoreContext();
-    console.log(totalQuantities, 'ttttt')
-    console.log(cartItems, 'ooooo')
+    const { totalPrice, totalQuantities, cartItems, setShowCart, handleCartItemQuantity, onRemoveProduct, openModal, closeModal, } = useStoreContext();
+
+    const handleCheckout = () => {
+        openModal()
+        setShowCart(false)
+    }
 
     return (
         <div className='w-[100vw] bg-[rgba(0,0,0,0.4)] fixed right-0 top-0 z-[9999] transition-all ease-in-out duration-700'>
@@ -37,11 +40,11 @@ const Cart = () => {
                                 <div className='mt-2 md:mt-8 flex items-center'>
                                     <h2 className='text-[16px] md:text-[20px]'>Quantity</h2>
                                     <div className='flex items-center ml-1 md:ml-3 justify-between'>
-                                        <AiFillMinusCircle className='text-black text-[25px] cursor-pointer ml-1' onClick={()=> handleCartItemQuantity(item?._id, 'dec')}/>
+                                        <AiFillMinusCircle className='text-black text-[25px] cursor-pointer ml-1' onClick={() => handleCartItemQuantity(item?._id, 'dec')} />
                                         <h1 className='text-[25px] ml-1'>{item?.quantity}</h1>
-                                        <AiFillPlusCircle className='text-black text-[25px] cursor-pointer' onClick={()=> handleCartItemQuantity(item?._id, 'inc')}/>
+                                        <AiFillPlusCircle className='text-black text-[25px] cursor-pointer' onClick={() => handleCartItemQuantity(item?._id, 'inc')} />
                                     </div>
-                                    <button className='outline-none border-none px-2 py-1 text-[10px] md:text-[16px] text-white bg-red-500 ml-7 md:ml-32' onClick={()=> onRemoveProduct(item)}>Remove</button>
+                                    <button className='outline-none border-none px-2 py-1 text-[10px] md:text-[16px] text-white bg-red-500 ml-7 md:ml-32' onClick={() => onRemoveProduct(item)}>Remove</button>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +56,7 @@ const Cart = () => {
                             <h3 className='text-[18px]'>Subtotal:</h3>
                             <h3>${totalPrice}</h3>
                         </div>
-                        <div className='w-[100%] mt-3 mx-auto py-3 md:py-4 rounded-full cursor-pointer text-[14px] md:text-[16px] bg-black text-white text-center' onClick={() => setShowCart(false)}>Checkout</div>
+                        <div className='w-[100%] mt-3 mx-auto py-3 md:py-4 rounded-full cursor-pointer text-[14px] md:text-[16px] bg-black text-white text-center' onClick={handleCheckout}>Checkout</div>
                     </div>
                 )}
             </div>
