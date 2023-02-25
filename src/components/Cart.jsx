@@ -4,7 +4,7 @@ import { useStoreContext } from '../contexts/StoreContext';
 
 
 const Cart = () => {
-    const { totalPrice, totalQuantities, cartItems, setShowCart, handleCartItemQuantity, onRemoveProduct, openModal, closeModal, } = useStoreContext();
+    const { totalPrice, totalQuantities, cartItems, setShowCart, handleCartItemQuantity, onRemoveProduct, openModal } = useStoreContext();
 
     const handleCheckout = () => {
         openModal()

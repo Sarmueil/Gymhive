@@ -12,10 +12,8 @@ import Modal from './Modal';
 const ProductMainPage = () => {
 
     const { quantity, increaseQuantity, decreaseQuantity, onAddProduct,isOpen } = useStoreContext()
-
     const { id } = useParams()
     const singleProduct = products?.find((item) => item?._id === id)
-
     const realedProducts = products?.filter((item) => item?.isRelatedProduct === true && item?._id !== id)
 
     return (

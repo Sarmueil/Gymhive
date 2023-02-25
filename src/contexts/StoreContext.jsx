@@ -7,7 +7,8 @@ const initialState = {
     totalPrice: 0,
     totalQuantities: 0,
     quantity: 1,
-    showModal:false
+    showModal:false,
+    paySuccess:false
 }
 
 const StoreContext = createContext(initialState);
@@ -24,6 +25,7 @@ export const StoreContextProviderContainer = ({ children }) => {
     const [cartItems, setCartItems] = useState(initialState.cartItems)
     const [totalQuantities, setTotalQuantities] = useState(initialState.totalQuantities); 
     const [isOpen, setIsOpen] = useState(initialState.showModal);
+    const [isPaidSuccessful, setIsPaodSuccessful] = useState(initialState.paySuccess)
 
     const openModal = () => {
         setIsOpen(true);
@@ -49,6 +51,7 @@ export const StoreContextProviderContainer = ({ children }) => {
         setTotalQuantities((prev) => prev + quantity)
 
         if (checkProductInCart) {
+            // eslint-disable-next-line
             const updatedCartItems = cartItems.map((cartProduct) => {
                 if (cartProduct?._id === product?._id) return {
                     ...cartProduct, quantity: cartProduct?.quantity + quantity
@@ -64,6 +67,7 @@ export const StoreContextProviderContainer = ({ children }) => {
 
 
     let seenProducts; 
+    // eslint-disable-next-line
     let index;
 
     const handleCartItemQuantity = (id, val) => {
@@ -82,7 +86,7 @@ export const StoreContextProviderContainer = ({ children }) => {
                 setTotalQuantities((prev) => prev - 1)
             }
         }
-    }
+    } 
 
     const onRemoveProduct = (product) => {
         seenProducts = cartItems.find((item) => item?._id === product?._id)
@@ -108,7 +112,9 @@ export const StoreContextProviderContainer = ({ children }) => {
                 onRemoveProduct,
                 openModal,
                 closeModal,
-                isOpen
+                isOpen,
+                setIsPaodSuccessful,
+                isPaidSuccessful
             }}
         >
             {children}

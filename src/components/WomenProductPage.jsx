@@ -15,7 +15,7 @@ const WomenProductPage = () => {
     const branded = featuredProducts[5]
     return (
         <>
-            <HeadlineContainer text='Women' btnText='Filters' />
+            <HeadlineContainer text='Women' btnText='Explore' />
             <ProductsContainer products={newProducts.slice(0, 8)} />
             <SliderContainer data={relatedProducts} />
             <ProductsContainer products={newProducts.slice(9)} />

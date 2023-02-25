@@ -1,63 +1,45 @@
 import React from 'react';
-import { PaystackButton } from 'react-paystack';
+import { usePaystackPayment } from 'react-paystack';
 import '../components/homeLayout.css';
 import { useStoreContext } from '../contexts/StoreContext'
+import { useNavigate } from 'react-router-dom';
 
-const Paystackinterface = ({ email }) => {
-    const { closeModal, totalPrice } = useStoreContext(); 
-  // Paystack configuration options
-  const publicKey = 'pk_test_4aad205c107e2c3b0626eb0753ac582a19f7d005';
-  const amount = totalPrice * 10000; // amount in kobo (NGN 10,000)
-  const metadata = {
-    custom_fields: [
-      {
-        display_name: "Full Name",
-        variable_name: "full_name",
-        value: "John Doe"
-      }
-    ]
-  };
+const Paystackinterface = ({ email, username }) => {
+    const Navigate = useNavigate();
+    const { closeModal, totalPrice, setIsPaodSuccessful } = useStoreContext();
 
-  // Paystack onSuccess callback function
-  const onSuccess = (reference) => {
-    console.log(reference);
-    // Perform necessary actions on success
-    closeModal()
-  };
+    const payStackConfig = {
+        reference: Math.floor(Math.random() * 1000000000 + 1),
+        email: email,
+        amount: totalPrice * 100,
+        publicKey: 'pk_test_4aad205c107e2c3b0626eb0753ac582a19f7d005',
+        fullname: username,
+        channels: ['card', 'bank', 'ussd', 'qr', 'mobile_money', 'bank_transfer']
+    };
 
-  // Paystack onClose callback function
-  const onClose = () => {
-    console.log('Payment closed');
-    // Perform necessary actions on close
-   
-  };
+    const onPaystackSuccess = (reference) => {
+        console.log(reference, 'console.log(reference)')
+        closeModal()
+        Navigate(`/`)
+        setIsPaodSuccessful(true)
+    };
 
-  // Paystack onError callback function
-  const onError = (error) => {
-    console.error(error);
-    // Perform necessary actions on error
-  };
+    const onPaystackClose = () => {
+        console.log('closed');
+        Navigate(`/`)
+    };
 
-  // Render the PaystackButton component
-  return (
-    <PaystackButton
-      text="Make Payment"
-      className="paystack-button"
-      callback={onSuccess}
-      onClose={onClose}
-      disabled={false}
-      embed={false}
-      reference={Math.floor(Math.random() * 1000000000 + 1)}
-      email={email}
-      amount={amount}
-      publicKey={publicKey}
-      metadata={metadata}
-      channels={['card', 'bank', 'ussd', 'qr', 'mobile_money', 'bank_transfer']}
-      currency="NGN"
-      plan={null}
-      quantity={null}
-    />
-  );
+    const initializePaystackPayment = usePaystackPayment(payStackConfig);
+
+    const handlePayment = () => {
+        return initializePaystackPayment(
+            onPaystackSuccess,
+            onPaystackClose
+        )
+    }
+    return (
+        <button className="paystack-button" onClick={() => handlePayment()}>Make Payment</button>
+    );
 };
 
 export default Paystackinterface;

@@ -16,7 +16,7 @@ const MenProductPage = () => {
 
     return (
         <>
-            <HeadlineContainer text='Men' btnText='Filters' />
+            <HeadlineContainer text='Men' btnText='Explore'/>
             <ProductsContainer products={newProducts.slice(0, 8)} />
             <SliderContainer data={relatedProducts} />
             <ProductsContainer products={newProducts.slice(9)} />
