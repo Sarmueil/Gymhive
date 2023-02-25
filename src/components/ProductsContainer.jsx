@@ -12,7 +12,7 @@ const ProductsContainer = ({ products }) => {
                     <img src={product.product_images[0]} alt='shoe_image' className='object-cover h-[90%] w-full' />
                     <div className='flex items-center justify-between px-2'>
                         <h3 className="font-[Josefin Sans] text-[10px] md:text-[16px] text-black font-medium mt-1 md:mt-2">{shortWords(product?.product_name, 20)}</h3>
-                        <h3 className="font-[Josefin Sans] text-[16px] md:text-[18px] text-black font-medium mt-1 md:mt-2">${product.price}</h3>
+                        <h3 className="font-[Josefin Sans] text-[16px] md:text-[18px] text-black font-medium mt-1 md:mt-2"><span>&#8358;</span>{product.price}</h3>
                     </div>
                 </div>
             ))}

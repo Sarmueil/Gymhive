@@ -32,7 +32,7 @@ const ProductMainPage = () => {
                 <>
                     <h1 className='md:hidden inline-block text-[25px]'>{singleProduct?.product_name}</h1>
                     <div className='mt-1 md:hidden flex items-center'>
-                        <p className='text-[15px]'>${singleProduct?.price}</p>
+                        <p className='text-[15px]'><span>&#8358;</span>{singleProduct?.price}</p>
                         <div className='ml-3 flex items-center'>
                             <p className='text-[14px]'>Reviews:</p>
                             <div className='flex items-center'>
@@ -62,7 +62,7 @@ const ProductMainPage = () => {
                 <div className='py-2 md:py-6 px-2 md:px-8'>
                     <h1 className='hidden md:inline-block text-[40px]'>{singleProduct?.product_name}</h1>
                     <div className='mt-1 ml-2 hidden md:flex items-center border-b-2'>
-                        <p className='text-[30px]'>${singleProduct?.price}</p>
+                        <p className='text-[30px]'><span>&#8358;</span>{singleProduct?.price}</p>
                         <div className='ml-5 flex items-center'>
                             <p className='text-[16px]'>Reviews:</p>
                             <div className='flex items-center'>

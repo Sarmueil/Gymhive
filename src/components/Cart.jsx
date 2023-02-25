@@ -35,7 +35,7 @@ const Cart = () => {
                             <div className='w-full'>
                                 <div className='flex justify-between text-[#14213D] w-full'>
                                     <h5 className='text-[16px] md:text-[18px]'>{item?.product_name}</h5>
-                                    <h4 className='text-[#FCA311] text-[18px] md:text-[20px]'>${item?.price}</h4>
+                                    <h4 className='text-[#FCA311] text-[18px] md:text-[20px]'><span>&#8358;</span>{item?.price}</h4>
                                 </div>
                                 <div className='mt-2 md:mt-8 flex items-center'>
                                     <h2 className='text-[16px] md:text-[20px]'>Quantity</h2>
@@ -54,7 +54,7 @@ const Cart = () => {
                     <div className='absolute bottom-[12px] right-[5px] w-full py-[30px] px-[65px]'>
                         <div className='flex justify-between'>
                             <h3 className='text-[18px]'>Subtotal:</h3>
-                            <h3>${totalPrice}</h3>
+                            <h3><span>&#8358;</span>{totalPrice}</h3>
                         </div>
                         <div className='w-[100%] mt-3 mx-auto py-3 md:py-4 rounded-full cursor-pointer text-[14px] md:text-[16px] bg-black text-white text-center' onClick={handleCheckout}>Checkout</div>
                     </div>

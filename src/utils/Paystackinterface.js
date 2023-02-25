@@ -17,15 +17,13 @@ const Paystackinterface = ({ email, username }) => {
         channels: ['card', 'bank', 'ussd', 'qr', 'mobile_money', 'bank_transfer']
     };
 
-    const onPaystackSuccess = (reference) => {
-        console.log(reference, 'console.log(reference)')
+    const onPaystackSuccess = () => {
         closeModal()
         Navigate(`/`)
-        setIsPaodSuccessful(true)
+        setIsPaodSuccessful(true) 
     };
 
     const onPaystackClose = () => {
-        console.log('closed');
         Navigate(`/`)
     };
 

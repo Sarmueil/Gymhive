@@ -11,10 +11,10 @@ const ProductCard = ({ img, name, price, id }) => {
                     <img src={img} alt="workspace_images" className="object-cover rounded-xl w-full" />
                 </div>
                 <div className='flex items-center justify-between px-2'>
-                    <h3 className="font-[Josefin Sans] text-[16px] text-black font-medium mt-2">{shortWords(name, 20)}</h3>
-                    <h3 className="font-[Josefin Sans] text-[18px] text-black font-medium mt-2">${price}</h3>
+                    <h3 className="font-[Josefin Sans] text-[16px] text-black font-medium mt-2">{shortWords(name, 20)}</h3> 
+                    <h3 className="font-[Josefin Sans] text-[18px] text-black font-medium mt-2"><span>&#8358;</span>{price}</h3>
                 </div>
-            </div>
+            </div> 
     )
 }
 
