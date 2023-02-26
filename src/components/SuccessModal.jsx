@@ -18,7 +18,7 @@ const SuccessModal = () => {
             <div className="relative z-10 bg-white px-6 py-8 rounded-lg shadow-lg w-[90%] md:w-[550px]">
                 <div className='w-full text-center py-5'>
                     <img src={cartItems[0].product_images[0]} alt="shoe" className='mx-auto w-28 md:w-32 h-28 md:h-32 animate-bounce  shadow-2xl focus:animate-pulse transform rounded-full rotate-45 focus:rotate-90' />
-                    <h1 className='text-[20px] md:text-[30px] font-bold text-[#14213D] mt-3'>Your payment is sucessful</h1>
+                    <h1 className='text-[20px] md:text-[30px] font-bold text-[#14213D] mt-3'>Your payment is successful</h1>
                     <p className='text-[14px] md:text-[16px] font-light text-black mt-1'>Check your email for your transaction reciept</p>
                 </div>
                 <div className='flex items-center justify-around mt-3'>

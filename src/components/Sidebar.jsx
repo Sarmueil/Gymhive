@@ -1,5 +1,5 @@
 import React from 'react';
-import LogoA from '../assets/Images/Icon_logo.svg';
+// import LogoA from '../assets/Images/Icon_logo.svg';
 import LogoB from '../assets/Images/logo_black.svg';
 import { useNavigate } from 'react-router-dom';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -18,7 +18,7 @@ const Sidebar = ({ setShowSidebar }) => {
                         <div className='text-[20px] mt-4 font-bold py-3 px-4 shadow-lg hover:shadow-xl rounded-xl transition-all ease-in-out duration-700 w-full' key={index} onClick={() => Navigate(`/${menu.toLowerCase()}`)}>{menu === 'New' ? 'New Releases' : menu}</div>
                     ))}
                 </div>
-                <div className='mt-9 ml-4'>
+                {/* <div className='mt-9 ml-4'>
                     <div className='flex items-center'>
                         <img src={LogoA} alt="logo" className='object-contain h-[50px] w-[60px] cursor-pointer' onClick={() => Navigate(`/`)} />
                         <div className='text-[20px] font-bold ml-3'>Join Gymhive.</div>
@@ -27,7 +27,7 @@ const Sidebar = ({ setShowSidebar }) => {
                         <button className='border-none outline-none py-2 px-4 bg-black text-white text-[12px] rounded-lg' onClick={() => Navigate(`/gymhive`)}>Join</button>
                         <button className='border outline-none py-2 px-4 text-black bg-white text-[12px] rounded-lg'>Explore</button>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
