@@ -1,8 +1,11 @@
 import React from 'react'
 import { AiFillInstagram, AiFillFacebook ,AiFillTwitterCircle} from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
-    return (
+    const Navigate = useNavigate();
+
+    return ( 
         <div className='bg-gray-100 text-gray-600'>
             <div className='grid grid-cols-1 md:grid-cols-4 gap-y-10 px-20 md:px-32 py-14'>
                 <div className="space-y-4 text-xs text-gray-800 font-roboto cursor-pointer">
@@ -15,21 +18,17 @@ const Footer = () => {
                 </div>
                 <div className="space-y-4 text-xs text-gray-800 font-roboto cursor-pointer">
                     <h5 className="font-bold font-roboto text-[16px]">USEFUL LINKS</h5>
-                    <p>Help center</p>
-                    <p>Safety information</p>
-                    <p>Renting</p>
+                    <p onClick={() => Navigate(`/kids/products`)}>Kids sales</p>
+                    <p onClick={() => Navigate(`/women/products`)}>Women sales</p>
+                    <p onClick={() => Navigate(`/men/products`)}>Men sales</p>
                     <p>Accounts and payments</p>
                 </div>
                 <div className="space-y-4 text-xs text-gray-800 font-roboto cursor-pointer">
                     <h5 className="font-bold font-roboto text-[16px]">CATEGORIES</h5>
-                    <p>Arts</p>
-                    <p>Beauty and body care</p>
-                    <p>Technology</p>
-                    <p>Media and production</p>
-                    <p>Business and consulting</p>
-                    <p>Fashion</p>
-                    <p>Laundry and home care</p>
-                    <p>Repairs and installation</p>
+                    <p onClick={() => Navigate(`/men`)}>Men</p>
+                    <p onClick={() => Navigate(`/women`)}>Women</p>
+                    <p onClick={() => Navigate(`/kids`)}>Kids</p>
+                    <p onClick={() => Navigate(`/new`)}>New arrivals</p>
                 </div>
                 <div className="space-y-4 text-xs text-gray-800 font-roboto cursor-pointer">
                     <h5 className="font-bold font-roboto text-[16px]">SUPPORT</h5>
